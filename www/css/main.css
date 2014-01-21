@@ -1,0 +1,406 @@
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+.btn_pregnancy, .btn_mychildren, .btn_mysexlife, .btn_mymouth, .btn_myeyes {
+	padding-left: 66px !important;
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+}
+
+.btn_pregnancy h1, .btn_mychildren h1, .btn_mysexlife h1, .btn_mymouth h1, .btn_myeyes h1 {
+	font-size: 1em;
+	white-space: normal;
+}
+
+.btn_pregnancy > div, .btn_mychildren > div, .btn_mysexlife > div, .btn_mymouth > div, .btn_myeyes > div {
+	width: 35px !important;
+	height: 35px;
+	background: url("../img/check.png") no-repeat center center;
+	background-size: 35px;
+	position: absolute;
+	top: 16px;
+	right: 8px;
+	display: block;
+}
+
+.btn_pregnancy > img, .btn_mychildren > img, .btn_mysexlife > img, .btn_mymouth > img, .btn_myeyes > img {
+	display: block;
+	width: 50px;
+	padding-left: 5px;
+	padding-top: 20px;
+}
+
+div[data-role="page"] > div[data-role="header"] {
+	height: 110px;
+	background: url("../img/logo.png") no-repeat #23B9F1 center center;
+	background-size: 240px;
+	border: none;
+}
+
+.aplica {
+    padding-bottom: 0 !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+#detailContent > h1 {
+	font-size: 1.2em;
+	padding: 0;
+}
+
+#detailContent fieldset .ui-btn-inner {
+	font-size: 10px;
+}
+
+#detailContent .ui-collapsible-content > p {
+	padding: 0;
+	margin: 0;
+}
+
+.gender {
+	background: url("../img/sexlife.png") no-repeat right top;
+	background-size: 20px;
+}
+
+.pregnancy {
+	background: url("../img/pregnant.png") no-repeat right top;
+	background-size: 20px;	
+}
+
+.ages {
+	background: url("../img/children.png") no-repeat right top;
+	background-size: 20px;
+}
+
+.gender a, .pregnancy a, .ages a {
+    background-image: none !important;
+    border-radius: 0 !important;
+    text-align: left !important;
+}
+
+.image {
+	width: 100%;
+	height: 90px;
+	display: block;
+	position: absolute;
+}
+
+
+#progressBar {
+	margin: 5px auto;
+	width: 200px;
+	height: 22px;
+}
+
+#progressBar div {
+	height: 100%;
+	color: #fff;
+	text-align: right;
+	font-size: 12px;
+	line-height: 22px;
+	width: 0;
+}
+
+.pb {
+	overflow: hidden;
+}
+.pb div {
+	background-color: #ff3333;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ff6666), to(#ff3333)); 
+	background: -webkit-linear-gradient(top, #ff6666, #ff3333); 
+	background: -moz-linear-gradient(top, #ff6666, #ff3333); 
+	background: -ms-linear-gradient(top, #ff6666, #ff3333); 
+	background: -o-linear-gradient(top, #ff6666, #ff3333);
+}
+
+#home{
+	background-image: linear-gradient(bottom, #23BAF1 0%, #FFFFFF 100%);
+	background-image: -o-linear-gradient(bottom, #23BAF1 0%, #FFFFFF 100%);
+	background-image: -moz-linear-gradient(bottom, #23BAF1 0%, #FFFFFF 100%);
+	background-image: -webkit-linear-gradient(bottom, #23BAF1 0%, #FFFFFF 100%);
+	background-image: -ms-linear-gradient(bottom, #23BAF1 0%, #FFFFFF 100%);
+
+	background-image: -webkit-gradient(
+		linear,
+		right bottom,
+		right top,
+		color-stop(0, #23BAF1),
+		color-stop(1, #FFFFFF)
+	);
+}
+
+/*=========================================BEGIN ANDROID DEVICESS ===================================*/
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */			
+    background-attachment:fixed;
+    font-family: 'Open Sans', sans-serif;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    text-transform: none;
+    width:100%;
+
+    background-image: linear-gradient(bottom, #23BAF1 36%, #FFFFFF 100%);
+	background-image: -o-linear-gradient(bottom, #23BAF1 36%, #FFFFFF 100%);
+	background-image: -moz-linear-gradient(bottom, #23BAF1 36%, #FFFFFF 100%);
+	background-image: -webkit-linear-gradient(bottom, #23BAF1 36%, #FFFFFF 100%);
+	background-image: -ms-linear-gradient(bottom, #23BAF1 36%, #FFFFFF 100%);
+
+	background-image: -webkit-gradient(
+		linear,
+		right bottom,
+		right top,
+		color-stop(0.36, #23BAF1),
+		color-stop(1, #FFFFFF)
+	);
+}
+
+/* Portrait layout (default) */
+/*.app {
+    background:url(../img/logo2.png) no-repeat center top; 
+    position:absolute;             
+    left:49%;
+    right: 50%;
+    top:50%;
+    height:50px;                   
+    width:250px;                            
+    background-size: contain;
+    text-align:center;
+    padding:210px 0px 0px 0px;     
+    margin:-115px 0px 0px -112px;                                
+}*/
+
+/* Landscape layout (with min-width) */
+/*@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .app {
+        background-position:left center;
+        padding:100px 0px 0px 0px;   
+        margin:-98px 0px 0px -98px;                                     
+    }
+}*/
+
+.logoEntidad{
+	/*background:url(../img/minsalud.png) no-repeat center top; 
+	position:absolute;             
+    left:49%;
+    top:50%;
+    height:50px;                   
+    width:250px;   */                
+    /*background-position: 50% 50%;*/
+    /*background-size: 100%;*/      /*it works good but, expand the image some bad */
+    /*http://stackoverflow.com/questions/6028737/resize-background-image-in-div-using-css*/            
+   /* background-size: contain;
+    text-align:center;*/
+   /* padding:90px 0px 0px 0px;*/     /* image height is 200px (bottom 20px are overlapped with text) */
+    /*margin:-115px 0px 0px -112px;*/  /* offset vertical: half of image height and text area height */
+                                   /* offset horizontal: half of text area width */
+}
+
+.title{
+    font-size: 18px;
+    margin:0px;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+    letter-spacing:-1px;
+    color: #ed3237;
+    padding-top: 10px;
+}
+
+.subtitle{
+   font-size: 15px;
+   margin:0px;
+   overflow:visible;
+   padding:0px;
+   text-align:center; 
+   letter-spacing: -1px;
+}
+
+.event {
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    color:#FFFFFF;
+    font-size:12px;
+    margin:0px 30px;
+    padding:2px 0px;
+}
+
+.event.listening {
+    background-color:#333333;
+    display:block;
+}
+
+.event.received {
+    background-color:#4B946A;
+    display:none;
+}
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+}
+
+/*========================================== END ANDROID DEVICES ====================================*/
+
+/*iPad mini*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 1)  {
+    .app {
+        background:url(../img/logo2.png) no-repeat center top; 
+        position:absolute;            
+        left:49%;       
+        right: 50%;     
+        top:50%;            
+        height: 120px;                   
+        width:  600px;                   
+        background-size: contain;
+        text-align: center;
+        padding: 545px 0px 0px 0px;     
+        margin: -259px 0px 0px -290px;  
+    }
+}
+
+/* ipad portrait 1 2 3 */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) 
+and (-webkit-min-device-pixel-ratio: 1) {
+    .app {
+        background:url(../img/logo2.png) no-repeat center top; 
+        position:absolute;            
+        left:49%;       
+        right: 50%;     
+        top:50%;            
+        height: 120px;                   
+        width:  600px;                   
+        background-size: contain;
+        text-align: center;
+        padding: 545px 0px 0px 0px;     
+        margin: -259px 0px 0px -290px;  
+    }
+}
+
+/*iPad Retina*/
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+    .app {
+        background:url(../img/logo2.png) no-repeat center top; 
+        position: absolute;
+        left: 49%;
+        right: 50%;
+        top: 50%;
+        height: 120px;
+        width: 695px;
+        background-size: contain;
+        text-align: center;
+        padding: 633px 0px 0px 0px;
+        margin: -259px 0px 0px -337px; 
+    }
+} 
+
+/*iPhone 5*/
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : portrait) {
+    .app {
+        background:url(../img/logo2.png) no-repeat center top; 
+        position: absolute;
+        left: 49%;
+        right: 50%;
+        top: 50%;
+        height: 100px;
+        width: 308px;
+        background-size: contain;
+        text-align: center;
+        padding: 310px 0px 0px 0px;
+        margin: -166px 0px 0px -151px;
+    }
+}
+
+/*iPhone 2G/3G/3GS Resolution*/
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) 
+and (orientation : portrait) {
+    .app {
+        background:url(../img/logo2.png) no-repeat center top; 
+        position: absolute;
+        left: 49%;
+        right: 50%;
+        top: 50%;
+        height: 100px;
+        width: 308px;
+        background-size: contain;
+        text-align: center;
+        padding: 310px 0px 0px 0px;
+        margin: -166px 0px 0px -151px;
+    }
+}
+
+/*iPhone 4/4s*/
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) 
+and (orientation : portrait) {
+    .app {
+        background:url(../img/logo2.png) no-repeat center top; 
+        position: absolute;
+        left: 49%;
+        right: 50%;
+        top: 50%;
+        height: 100px;
+        width: 308px;
+        background-size: contain;
+        text-align: center;
+        padding: 310px 0px 0px 0px;
+        margin: -166px 0px 0px -151px;
+    }
+}
+
+.ui-icon-autoc-pregnancy {
+    background-image: url("../img/pregnant.png") !important;
+    background-size: 18px !important;
+}
+
+.ui-icon-autoc-children {
+    background-image: url("../img/children.png") !important;
+    background-size: 18px !important;
+}
+
+.ui-icon-autoc-sexlife {
+    background-image: url("../img/sexlife.png") !important;
+    background-size: 18px !important;
+}
+
+.ui-icon-autoc-mouth {
+    background-image: url("../img/mouth.png") !important;
+    background-size: 18px !important;
+}
+
+.ui-icon-autoc-eyes {
+    background-image: url("../img/eyes.png") !important;
+    background-size: 18px !important;
+}
+
